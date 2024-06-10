@@ -1,4 +1,4 @@
-package specificResourcesContexts.trainig;
+package readiness.specificReadinessContexts.trainig;
 
 import common.EventListener;
 import readiness.ReadinessFacade;
@@ -13,7 +13,6 @@ class TrainingsPassedListener implements EventListener<TrainingsPassed> {
 
     @Override
     public void handle(TrainingsPassed event) {
-        readinessFacade.removeLockFor(event.resourceId(), TrainingReadinessContextId.VALUE);
-
+        readinessFacade.readinessCheckPassedBy(event.resourceId(), TrainingReadinessContextId.VALUE);
     }
 }

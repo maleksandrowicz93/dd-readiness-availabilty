@@ -3,28 +3,31 @@ package readiness;
 import common.ResourceId;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 class ReadinessUnit {
 
     private final ResourceId resourceId;
-    private final Collection<ReadinessContextId> locks = new HashSet<>();
+    private final Map<ReadinessContextId, Boolean> readinessChecks;
     private boolean isReady = false;
 
-    ReadinessUnit(ResourceId resourceId) {
+    ReadinessUnit(ResourceId resourceId, Collection<ReadinessContextId> readinessContexts) {
         this.resourceId = resourceId;
+        this.readinessChecks = readinessContexts.stream()
+                                                .collect(Collectors.toMap(
+                                                        Function.identity(),
+                                                        id -> false
+                                                ));
     }
 
-    void addLock(ReadinessContextId lock) {
-        locks.add(lock);
-    }
-
-    void removeLock(ReadinessContextId lock) {
-        if (!locks.contains(lock)) {
+    void readinessCheckPassedBy(ReadinessContextId readinessContext) {
+        if (!readinessChecks.containsKey(readinessContext)) {
             return;
         }
-        locks.remove(lock);
-        if (locks.isEmpty()) {
+        readinessChecks.put(readinessContext, true);
+        if (readinessChecks.values().stream().allMatch(Boolean.TRUE::equals)) {
             isReady = true;
         }
     }

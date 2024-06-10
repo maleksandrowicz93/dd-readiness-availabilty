@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59709719-bce9-4eab-a05a-6cdc589cf042" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ReadinessFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ReadinessUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ConsentReadinessContextId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ConsentReadinessContextId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ConsentsSignedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ConsentsSignedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ResourceAddedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/consent/ReadinessUnitAddedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/ResourceAddedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/ReadinessUnitAddedListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/TrainingReadinessContextId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/TrainingReadinessContextId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/TrainingsPassedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specificResourcesContexts/trainig/TrainingsPassedListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +32,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2hgG3mH3vEvHN8LNMYmk3ltTJw8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -41,13 +46,13 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="specificResourcesContexts.trainig" />

@@ -1,4 +1,4 @@
-package specificResourcesContexts.consent;
+package readiness.specificReadinessContexts.consent;
 
 import common.Event;
 import common.ResourceId;

@@ -1,4 +1,4 @@
-package specificResourcesContexts.trainig;
+package readiness.specificReadinessContexts.trainig;
 
 import common.Event;
 import common.ResourceId;

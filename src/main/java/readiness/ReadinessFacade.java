@@ -13,20 +13,10 @@ public class ReadinessFacade {
         this.availabilityFacade = availabilityFacade;
     }
 
-    public void addReadinessUnit(ResourceId resourceId) {
-        var unit = new ReadinessUnit(resourceId);
-        readinessRepo.save(unit);
-    }
-
-    public void addLockFor(ResourceId resourceId, ReadinessContextId readinessContextId) {
-        readinessRepo.findByResourceId(resourceId)
-                     .ifPresent(unit -> unit.addLock(readinessContextId));
-    }
-
-    public void removeLockFor(ResourceId resourceId, ReadinessContextId readinessContextId) {
+    public void readinessCheckPassedBy(ResourceId resourceId, ReadinessContextId readinessContextId) {
         readinessRepo.findByResourceId(resourceId)
                      .ifPresent(unit -> {
-                         unit.removeLock(readinessContextId);
+                         unit.readinessCheckPassedBy(readinessContextId);
                          if (unit.isReady()) {
                              availabilityFacade.addAvailabilityUnitFor(resourceId);
                          }

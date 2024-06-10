@@ -1,8 +1,8 @@
-package specificResourcesContexts.trainig;
+package readiness.specificReadinessContexts.trainig;
 
 import readiness.ReadinessContextId;
 
-interface TrainingReadinessContextId {
+public interface TrainingReadinessContextId {
 
     ReadinessContextId VALUE = new ReadinessContextId("TRAINING");
 }

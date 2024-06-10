@@ -1,4 +1,4 @@
-package specificResourcesContexts.consent;
+package readiness.specificReadinessContexts.consent;
 
 import common.EventListener;
 import readiness.ReadinessFacade;
@@ -13,6 +13,6 @@ class ConsentsSignedListener implements EventListener<ConsentsSigned> {
 
     @Override
     public void handle(ConsentsSigned event) {
-        readinessFacade.removeLockFor(event.resourceId(), ConsentReadinessContextId.VALUE);
+        readinessFacade.readinessCheckPassedBy(event.resourceId(), ConsentReadinessContextId.VALUE);
     }
 }

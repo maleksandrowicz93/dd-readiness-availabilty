@@ -1,8 +1,8 @@
-package specificResourcesContexts.consent;
+package readiness.specificReadinessContexts.consent;
 
 import readiness.ReadinessContextId;
 
-interface ConsentReadinessContextId {
+public interface ConsentReadinessContextId {
 
     ReadinessContextId VALUE = new ReadinessContextId("CONSENT");
 }
