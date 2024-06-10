@@ -1,6 +1,6 @@
 package availability;
 
-import common.ResourceId;
+import publishedLanguage.ResourceId;
 
 public class AvailabilityFacade {
 

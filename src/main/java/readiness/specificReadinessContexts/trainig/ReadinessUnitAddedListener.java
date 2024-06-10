@@ -3,7 +3,7 @@ package readiness.specificReadinessContexts.trainig;
 import common.EventListener;
 import readiness.ReadinessFacade;
 import readiness.ReadinessUnitAdded;
-import resourceCrud.ResourceType;
+import publishedLanguage.ResourceType;
 
 class ReadinessUnitAddedListener implements EventListener<ReadinessUnitAdded> {
 

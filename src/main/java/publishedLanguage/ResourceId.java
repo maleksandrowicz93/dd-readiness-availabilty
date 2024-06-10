@@ -1,4 +1,4 @@
-package common;
+package publishedLanguage;
 
 import java.util.UUID;
 

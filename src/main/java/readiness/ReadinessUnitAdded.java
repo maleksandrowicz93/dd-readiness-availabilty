@@ -1,8 +1,8 @@
 package readiness;
 
 import common.Event;
-import common.ResourceId;
-import resourceCrud.ResourceType;
+import publishedLanguage.ResourceId;
+import publishedLanguage.ResourceType;
 
 public record ReadinessUnitAdded(
         ResourceId resourceId,

@@ -1,7 +1,8 @@
 package resourceCrud;
 
 import common.Event;
-import common.ResourceId;
+import publishedLanguage.ResourceId;
+import publishedLanguage.ResourceType;
 
 public record ResourceAdded(
         ResourceId resourceId,

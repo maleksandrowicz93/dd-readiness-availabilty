@@ -1,6 +1,6 @@
 package readiness;
 
-import common.ResourceId;
+import publishedLanguage.ResourceId;
 
 import java.util.Collection;
 import java.util.Map;

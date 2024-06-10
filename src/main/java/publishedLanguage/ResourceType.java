@@ -1,4 +1,4 @@
-package resourceCrud;
+package publishedLanguage;
 
 public enum ResourceType {
 

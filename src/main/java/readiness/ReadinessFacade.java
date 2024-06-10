@@ -1,7 +1,7 @@
 package readiness;
 
 import availability.AvailabilityFacade;
-import common.ResourceId;
+import publishedLanguage.ResourceId;
 
 public class ReadinessFacade {
 

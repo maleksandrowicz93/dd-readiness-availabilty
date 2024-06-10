@@ -1,6 +1,7 @@
 package resourceCrud;
 
-import common.ResourceId;
+import publishedLanguage.ResourceId;
+import publishedLanguage.ResourceType;
 
 import java.util.Collection;
 
