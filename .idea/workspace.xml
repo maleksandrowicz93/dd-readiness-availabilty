@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59709719-bce9-4eab-a05a-6cdc589cf042" name="Changes" comment="create publishedLanguage context">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="59709719-bce9-4eab-a05a-6cdc589cf042" name="Changes" comment="logic refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/EventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/infra/EventPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessContextId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ReadinessFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ReadinessUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessUnitAdded.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ResourceAddedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ResourceAddedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/SpecificReadinessContextIdFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/AwaitingReadinessChecksFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/consent/ConsentReadinessContextId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/consent/ConsentsSigned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/consent/ConsentsSigned.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/consent/ConsentsSignedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ConsentsSignedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/consent/ReadinessUnitAddedListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/trainig/ReadinessUnitAddedListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/trainig/TrainingReadinessContextId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/trainig/TrainingsPassed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/trainig/TrainingsPassed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/specificReadinessContexts/trainig/TrainingsPassedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/TrainingsPassedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resourceCrud/ResourceAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resourceCrud/ResourceAdded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resourceCrud/ResourceCrudFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resourceCrud/ResourceCrudFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/readiness/ReadinessContextId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/readiness/ReadinessContextId.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +27,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;maleksandrowicz93&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/maleksandrowicz93/dd-readiness-availabilty.git&quot;,
+    &quot;accountId&quot;: &quot;563ef28d-83d4-4654-9562-a52933052797&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -59,24 +51,46 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mateuszaleksandrowicz/Desktop/repo/readiness-availabilty&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ReadinessContextId.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mateuszaleksandrowicz/Desktop/repo/readiness-availabilty",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="readiness.specificReadinessContexts.labillityAsusrance" />
       <recent name="publishedLanguage" />
       <recent name="specificResourcesContexts.trainig" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ReadinessContextId" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="readiness.ReadinessContextId" />
+      <module name="readiness-availabilty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="readiness.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReadinessContextId" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,12 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718040700082</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="logic refactor">
+      <option name="closed" value="true" />
+      <created>1718095390961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718095390961</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="logic fix" />
     <MESSAGE value="create publishedLanguage context" />
-    <option name="LAST_COMMIT_MESSAGE" value="create publishedLanguage context" />
+    <MESSAGE value="logic refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="logic refactor" />
   </component>
 </project>
