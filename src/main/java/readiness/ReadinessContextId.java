@@ -30,7 +30,7 @@ record ReadinessContextId(String value) {
             case ConsentsSigned _ -> consentsSigned();
             case LiabilityAssuranceSigned _ -> liabilityAssuranceSigned();
             case TrainingsPassed _ -> trainingsPassed();
-            default -> throw new IllegalStateException("Unexpected value: " + event);
+            case null, default -> throw new IllegalStateException("Unexpected value: " + event);
         };
     }
 }
