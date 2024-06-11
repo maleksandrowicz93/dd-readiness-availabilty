@@ -1,4 +1,4 @@
-package common;
+package infra;
 
 public interface EventPublisher {
 

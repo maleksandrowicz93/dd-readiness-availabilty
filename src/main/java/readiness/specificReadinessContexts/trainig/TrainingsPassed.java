@@ -1,7 +1,7 @@
 package readiness.specificReadinessContexts.trainig;
 
-import common.Event;
+import domainInfra.ResourceEvent;
 import publishedLanguage.ResourceId;
 
-public record TrainingsPassed(ResourceId resourceId) implements Event {
+public record TrainingsPassed(ResourceId resourceId) implements ResourceEvent {
 }

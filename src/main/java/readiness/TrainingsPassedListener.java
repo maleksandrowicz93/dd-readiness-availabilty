@@ -1,7 +1,7 @@
-package readiness.specificReadinessContexts.trainig;
+package readiness;
 
-import common.EventListener;
-import readiness.ReadinessFacade;
+import infra.EventListener;
+import readiness.specificReadinessContexts.trainig.TrainingsPassed;
 
 class TrainingsPassedListener implements EventListener<TrainingsPassed> {
 
@@ -13,6 +13,6 @@ class TrainingsPassedListener implements EventListener<TrainingsPassed> {
 
     @Override
     public void handle(TrainingsPassed event) {
-        readinessFacade.readinessCheckPassedBy(event.resourceId(), TrainingReadinessContextId.VALUE);
+        readinessFacade.readinessCheckPassedBy(event);
     }
 }

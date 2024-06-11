@@ -1,7 +1,7 @@
-package readiness.specificReadinessContexts.consent;
+package readiness;
 
-import common.EventListener;
-import readiness.ReadinessFacade;
+import infra.EventListener;
+import readiness.specificReadinessContexts.consent.ConsentsSigned;
 
 class ConsentsSignedListener implements EventListener<ConsentsSigned> {
 
@@ -13,6 +13,6 @@ class ConsentsSignedListener implements EventListener<ConsentsSigned> {
 
     @Override
     public void handle(ConsentsSigned event) {
-        readinessFacade.readinessCheckPassedBy(event.resourceId(), ConsentReadinessContextId.VALUE);
+        readinessFacade.readinessCheckPassedBy(event);
     }
 }

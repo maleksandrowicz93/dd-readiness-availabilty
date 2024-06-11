@@ -1,7 +1,7 @@
 package readiness.specificReadinessContexts.consent;
 
-import common.Event;
+import domainInfra.ResourceEvent;
 import publishedLanguage.ResourceId;
 
-public record ConsentsSigned(ResourceId resourceId) implements Event {
+public record ConsentsSigned(ResourceId resourceId) implements ResourceEvent {
 }

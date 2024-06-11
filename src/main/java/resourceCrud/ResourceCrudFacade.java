@@ -1,6 +1,6 @@
 package resourceCrud;
 
-import common.EventPublisher;
+import infra.EventPublisher;
 import publishedLanguage.ResourceId;
 import publishedLanguage.ResourceType;
 
@@ -20,6 +20,6 @@ public class ResourceCrudFacade {
     public void addResource(String name, ResourceType resourceType, Collection<String> capabilities) {
         var resource = new Resource(new ResourceId(UUID.randomUUID()), name, resourceType, capabilities);
         resourceRepo.save(resource);
-        eventPublisher.publish(new ResourceAdded(resource.resourceId(), resourceType));
+        eventPublisher.publish(new ResourceAdded(resource.resourceId()));
     }
 }
