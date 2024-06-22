@@ -15,14 +15,14 @@ class AwaitingReadinessChecksFactory {
     Collection<ReadinessContextId> createFor(ResourceClassification resourceClassification) {
         var awaitingReadinessChecks = new HashSet<ReadinessContextId>();
         chooseProviderByResourceType(resourceClassification.resourceType())
-                .map(provider -> provider.provideFor(resourceClassification.resourceId()))
+                .map(AwaitingReadinessChecksProvider::provide)
                 .ifPresent(awaitingReadinessChecks::addAll);
         resourceClassification.capabilities()
                               .stream()
                               .map(AwaitingReadinessChecksFactory::chooseProviderByCapability)
                               .flatMap(Optional::stream)
                               .filter(Objects::nonNull)
-                              .map(provider -> provider.provideFor(resourceClassification.resourceId()))
+                              .map(AwaitingReadinessChecksProvider::provide)
                               .flatMap(Collection::stream)
                               .forEach(awaitingReadinessChecks::add);
         return Set.copyOf(awaitingReadinessChecks);

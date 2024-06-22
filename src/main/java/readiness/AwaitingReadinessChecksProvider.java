@@ -1,18 +1,16 @@
 package readiness;
 
-import publishedLanguage.ResourceId;
-
 import java.util.Collection;
 import java.util.Set;
 
 interface AwaitingReadinessChecksProvider {
 
-    Collection<ReadinessContextId> provideFor(ResourceId resourceId);
+    Collection<ReadinessContextId> provide();
 }
 
 class ForEmployee implements AwaitingReadinessChecksProvider {
     @Override
-    public Collection<ReadinessContextId> provideFor(ResourceId resourceId) {
+    public Collection<ReadinessContextId> provide() {
         return Set.of(
                 ReadinessContextId.consentsSigned(),
                 ReadinessContextId.trainingsPassed()
@@ -22,7 +20,7 @@ class ForEmployee implements AwaitingReadinessChecksProvider {
 
 class ForSpace implements AwaitingReadinessChecksProvider {
     @Override
-    public Collection<ReadinessContextId> provideFor(ResourceId resourceId) {
+    public Collection<ReadinessContextId> provide() {
         return Set.of(
                 ReadinessContextId.liabilityAssuranceSigned()
         );
@@ -31,7 +29,7 @@ class ForSpace implements AwaitingReadinessChecksProvider {
 
 class ForSKill implements AwaitingReadinessChecksProvider {
     @Override
-    public Collection<ReadinessContextId> provideFor(ResourceId resourceId) {
+    public Collection<ReadinessContextId> provide() {
         return Set.of(
                 ReadinessContextId.certificateConfirmed()
         );
@@ -40,7 +38,7 @@ class ForSKill implements AwaitingReadinessChecksProvider {
 
 class ForVehicle implements AwaitingReadinessChecksProvider {
     @Override
-    public Collection<ReadinessContextId> provideFor(ResourceId resourceId) {
+    public Collection<ReadinessContextId> provide() {
         return Set.of(
                 ReadinessContextId.liabilityAssuranceSigned()
         );
